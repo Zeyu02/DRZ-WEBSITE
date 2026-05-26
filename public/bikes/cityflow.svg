@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" role="img" aria-labelledby="title desc">
+  <title id="title">Cityflow Bike</title>
+  <desc id="desc">Stylized city bike in blue and charcoal.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#e0f2fe" />
+      <stop offset="1" stop-color="#bae6fd" />
+    </linearGradient>
+    <linearGradient id="frame" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0ea5e9" />
+      <stop offset="1" stop-color="#0284c7" />
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="800" fill="url(#bg)" />
+  <circle cx="350" cy="560" r="145" fill="none" stroke="#334155" stroke-width="22" />
+  <circle cx="840" cy="560" r="145" fill="none" stroke="#334155" stroke-width="22" />
+  <path d="M350 560 L530 380 L700 560 Z" fill="none" stroke="url(#frame)" stroke-width="26" stroke-linecap="round" stroke-linejoin="round" />
+  <path d="M530 380 L660 340 L760 430" fill="none" stroke="url(#frame)" stroke-width="26" stroke-linecap="round" />
+  <path d="M660 340 L640 285" fill="none" stroke="#0f172a" stroke-width="22" stroke-linecap="round" />
+  <path d="M760 430 L860 430" fill="none" stroke="#0f172a" stroke-width="22" stroke-linecap="round" />
+  <path d="M514 362 L560 332" fill="none" stroke="#0f172a" stroke-width="18" stroke-linecap="round" />
+  <rect x="600" y="240" width="125" height="30" rx="15" fill="#0f172a" />
+  <text x="70" y="130" fill="#0369a1" font-size="68" font-family="Verdana, sans-serif" font-weight="700">Cityflow C8</text>
+</svg>
