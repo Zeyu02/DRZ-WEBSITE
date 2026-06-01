@@ -1,41 +1,53 @@
-import Link from "next/link"
 import Section from "@/components/section"
-import Button from "@/components/ui/button"
-import { products } from "./constants"
+import Text from "@/components/ui/text"
+import { featuredCollections } from "./constants"
 
-export default function ProductsSection() {
+type ProductsSectionProps = {
+  query: string
+}
+
+export default function ProductsSection({ query }: ProductsSectionProps) {
+  const normalized = query.trim().toLowerCase()
+  const filtered = normalized
+    ? featuredCollections.filter((item) =>
+        [item.title, item.body, item.eyebrow].some((value) =>
+          value.toLowerCase().includes(normalized)
+        )
+      )
+    : featuredCollections
+
   return (
     <Section
       id="parts"
       header={{
-        title: "Our Products",
+        title: "Featured collections",
       }}
     >
-      <p className="section-lede mb-6">
-        Here at DRZ we are selling a wide range of high-quality bike parts and accessories.
-      </p>
-      <div className="products-marquee">
-        <div className="products-track">
-          {[...products, ...products].map((product, index) => (
-            <Link
-              key={`${product.title}-${index}`}
-              href="/contact"
-              className="product-card product-card-link"
-              aria-label={`Ask about ${product.title}`}
-            >
-              <div
-                className="product-card-image"
-                style={{ backgroundImage: `url(${product.image})` }}
-              >
-                <div className="product-card-title">
-                  {product.title}
-                </div>
-              </div>
-              <p className="product-card-caption">{product.title}</p>
-            </Link>
-          ))}
-        </div>
+      <div className="featured-grid">
+        {filtered.map((item) => (
+          <article key={item.title} className="featured-card">
+            <div className="featured-media">
+              <img src={item.image} alt={item.title} />
+            </div>
+            <div className="featured-content">
+              <Text as="p" variant="cardEyebrow" className="featured-eyebrow">
+                {item.eyebrow}
+              </Text>
+              <Text as="h3" variant="cardTitle">
+                {item.title}
+              </Text>
+              <Text as="p" variant="cardBody" className="featured-body">
+                {item.body}
+              </Text>
+            </div>
+          </article>
+        ))}
       </div>
+      {filtered.length === 0 ? (
+        <Text as="p" variant="sectionLede" className="search-empty">
+          No featured collections match "{query}".
+        </Text>
+      ) : null}
     </Section>
   )
 }

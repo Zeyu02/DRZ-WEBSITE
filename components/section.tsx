@@ -24,7 +24,6 @@ export default function Section({ id, className, header, children }: SectionProp
           <SectionHeader
             eyebrow={header.eyebrow}
             title={header.title}
-            align={header.align}
           />
         </div>
       ) : null}

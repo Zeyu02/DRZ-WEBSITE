@@ -6,11 +6,8 @@ import { CONTACT } from "./constants"
 export default function ContactStrip() {
   return (
     <Section id="contact">
-      <div className="contact-strip">
+      <div className="contact-strip contact-strip-light">
         <div>
-          <Text as="p" variant="eyebrow">
-            Contact
-          </Text>
           <Text as="h2" variant="sectionTitle" className="mt-2">
             Need parts or repairs today?
           </Text>
@@ -19,7 +16,7 @@ export default function ContactStrip() {
           </Text>
         </div>
         <div className="contact-strip-actions">
-          <Button href="/contact" variant="secondary">Contact Us!</Button>
+          <Button href="/contact" variant="secondary">Contact Us</Button>
         </div>
       </div>
     </Section>

@@ -27,7 +27,7 @@ const variantClass: Record<TextVariant, string> = {
   sectionLede: "section-lede",
   cardTitle: "card-title",
   cardBody: "card-body",
-  body: "text-base text-white/80",
+  body: "text-base text-[#2b2620]/70",
 }
 
 export default function Text<T extends ElementType = "p">({

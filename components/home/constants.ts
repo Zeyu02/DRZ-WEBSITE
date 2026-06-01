@@ -7,45 +7,73 @@ export const CONTACT = {
 }
 
 export const navItems = [
-  { label: "Business", href: "#business" },
+  { label: "Categories", href: "#categories" },
   { label: "Products", href: "#parts" },
   { label: "Media", href: "#video" },
   { label: "Contact", href: "#contact" },
 ]
 
-export const businessCards = [
+export const heroBenefits = [
+  { label: "Good Service" },
+  { label: "Secure Payment" },
+  { label: "Trusted Dealer" },
+  { label: "Good Quality" },
+  
+]
+
+export const featuredCollections = [
   {
-    label: "Location",
-    title: "Singao Rd, Kidapawan",
-    body: "DRZ Cycle Parts & Services, Cotabato, Philippines, 9400.",
+    title: "All Bikes Welcome",
+    body: "Lightweight frames, smooth ride geometry, and ready-to-ride setupsWe provide repair and maintenance services for all types and brands of bicycles.",
+    image: "/Collections/Tune3.jpg",
   },
   {
-    label: "Hours",
-    title: "8 AM - 6 PM Daily",
-    body: "Walk in or message us for availability, repairs, and parts advice.",
+    title: "Safety + gear",
+    body: "We offer safety and gear solutions, including helmets, locks, lights, and reliable commuter essentials built to last..",
+    image: "/Collections/Tune2.jpg",
   },
   {
-    label: "Services",
-    title: "Parts, Repairs, Upgrades",
-    body: "From tune-ups to full builds, we keep every ride ready.",
+    title: "Performance parts",
+    body: "We tune your bike with performance parts, including brakes and upgrades, for long rides.",
+    image: "/Collections/Tune1.jpg",
   },
 ]
 
-export const products = [
+export const categoryCards = [
   {
-    title: "Road / Gravel",
-    image: "/bikes/trailblazer.svg",
+    title: "Mountain",
+    image: "/bikes/bike3.jpg",
   },
   {
-    title: "Mountain Bike",
-    image: "/bikes/cityflow.svg",
+    title: "BMX",
+    image: "/bikes/bike1.jpg",
   },
   {
-    title: "Lifestyle",
-    image: "/brand/drz.jpg",
+    title: "Children Bikes",
+    image: "/bikes/bike2.jpg",
   },
   {
     title: "Accessories",
-    image: "/bikes/velodrift.svg",
+    image: "/bikes/Accessories.jpg",
+  },
+  
+]
+
+export const socialCards = [
+  {
+    title: "Service work",
+    video: "/vids/reels.mp4",
+  },
+  {
+    title: "New builds",
+    video: "/vids/reels1.mp4",
+  },
+  {
+    title: "Maintenance work",
+    video: "/vids/reels2.mp4",
+  },
+  {
+    title: "Accessory drop",
+    video: "/vids/reels3.mp4",
   },
 ]
