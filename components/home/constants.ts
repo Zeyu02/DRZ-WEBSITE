@@ -24,20 +24,24 @@ export const heroBenefits = [
 export const featuredCollections = [
   {
     title: "All Bikes Welcome",
+    eyebrow: "Repair & maintenance",
     body: "Lightweight frames, smooth ride geometry, and ready-to-ride setupsWe provide repair and maintenance services for all types and brands of bicycles.",
     image: "/Collections/Tune3.jpg",
   },
   {
     title: "Safety + gear",
+    eyebrow: "Stay protected",
     body: "We offer safety and gear solutions, including helmets, locks, lights, and reliable commuter essentials built to last..",
     image: "/Collections/Tune2.jpg",
   },
   {
     title: "Performance parts",
+    eyebrow: "Upgrades for speed",
     body: "We tune your bike with performance parts, including brakes and upgrades, for long rides.",
     image: "/Collections/Tune1.jpg",
   },
 ]
+
 
 export const categoryCards = [
   {
