@@ -10,8 +10,8 @@ export default function ProductsSection({ query }: ProductsSectionProps) {
   const normalized = query.trim().toLowerCase()
   const filtered = normalized
     ? featuredCollections.filter((item) =>
-        [item.title, item.body, item.eyebrow].some((value) =>
-          value.toLowerCase().includes(normalized)
+        [item.title, item.body, (item as any).eyebrow].some((value) =>
+          value?.toLowerCase().includes(normalized)
         )
       )
     : featuredCollections
