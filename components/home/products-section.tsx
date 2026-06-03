@@ -31,7 +31,7 @@ export default function ProductsSection({ query }: ProductsSectionProps) {
             </div>
             <div className="featured-content">
               <Text as="p" variant="cardEyebrow" className="featured-eyebrow">
-                {item.eyebrow}
+                {(item as any).eyebrow}
               </Text>
               <Text as="h3" variant="cardTitle">
                 {item.title}
